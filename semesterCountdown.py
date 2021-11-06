@@ -8,7 +8,7 @@ def get_countdown(deadline: str) -> Union[int, str]:
     >>> get_countdown("16 December, 2021")
     39
     >>> get_countdown("04 November, 2021")
-    0
+    'This date has already passed!'
     """
     curr_date = datetime.today()
     d2 = datetime.strptime(deadline, "%d %B, %Y")
