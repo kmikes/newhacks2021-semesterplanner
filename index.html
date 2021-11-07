@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<body>
+    <h1>Semester Planner</h1>
+    <p>A tool to help you visualize semester, course, and assignment deadlines so you can be more productive
+        during planning and studying!
+    </p>
+
+    {% block content %}
+    <form action="#" method="post">
+        <p>Name:</p>
+        <p><input name="nm" type="text"/></p>
+        <p><input type="submit" value="submit"/></p>
+    </form>
+
+    <form action="#" method="post">
+        <p>Event Name (Ex. "the end of the semester", "chem final exam"):</p>
+        <p><input name="event_name" type="text"/></p>
+        <p>Event Date ("20 November, 2021"):</p>
+        <p><input name="event_date" type="text"/></p>
+
+        <p><input type="submit" value="submit"/></p>
+    </form>
+
+    {% endblock %}
+
+</body>
+
+</html>
